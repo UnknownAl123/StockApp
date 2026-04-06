@@ -1366,14 +1366,14 @@
           return;
         }
         const msg =
-          `Halo ${sup.name},\n\nSaya ingin memesan:\n` +
+          `Assalamualaikum...\n\n ${sup.name} pesen meniko njeh...\n` +
           shopItems
             .map((s) => {
               const item = state.items.find((i) => i.id === s.itemId);
               return `- ${item.name}: ${s.qty} ${item.unit}${s.note ? " (" + s.note + ")" : ""}`;
             })
             .join("\n") +
-          `\n\nMohon konfirmasi. Terima kasih! 🙏`;
+          `\n\nMaturnuwun 🙏`;
         openWA(sup.wa, msg);
       }
       function openWA(wa, msg) {
